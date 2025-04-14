@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS ipinfo_db;
+
+USE ipinfo_db;
+
+CREATE TABLE ip_info (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    ip_address VARCHAR(45) UNIQUE NOT NULL,
+    payload TEXT
+);
